@@ -13,7 +13,7 @@ clean: ## wipes build directory
 	rm -rf build/
 install: ## symlinks extension in place, login with xorg and use ALT+F2 then `r` to dev
 	gnome-extensions uninstall clear-top-bar@superterran.net || true
-	rm -r ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net
+	rm -r ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net || true
 	ln -s $(pwd)src ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net
 enable:	## convenience to enable extension, probably will need to once installed and re-logged in
 	gnome-extensions enable clear-top-bar@superterran.net 
