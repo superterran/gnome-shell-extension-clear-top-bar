@@ -11,10 +11,11 @@ build: $(wildcard src/*) ## creates a release suitable for extensions.gnome.org
 	cd src/ && zip -r ../build/clear-top-bar@superterran.net.zip .
 clean: ## wipes build directory
 	rm -rf build/
-install: ## symlinks extension in place, login with xorg and use ALT+F2 then `r` to dev
+install: uninstall ## symlinks extension in place, login with xorg and use ALT+F2 then `r` to dev
+	ln -s $$(pwd)/src ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net
+uninstall: ## removes symlink
 	gnome-extensions uninstall clear-top-bar@superterran.net || true
 	rm -r ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net || true
-	ln -s $(pwd)src ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net
 enable:	## convenience to enable extension, probably will need to once installed and re-logged in
 	gnome-extensions enable clear-top-bar@superterran.net 
 disable: ## disable extension
