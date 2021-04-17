@@ -11,3 +11,17 @@
 #panel.superterran-clear-top-bar .panel-corner {
     -panel-corner-background-color: rgba(0, 0, 0, 0);
 }
+
+/* Bright background adjustments */
+
+#panel.superterran-clear-top-bar .system-status-icon,
+#panel.superterran-clear-top-bar .app-menu-icon > StIcon,
+#panel.superterran-clear-top-bar .popup-menu-arrow {
+    icon-shadow: 0px 2px 4px rgba(0, 0, 0, .95);
+}
+
+#panel.superterran-clear-top-bar .panel-button {
+    color: #eee;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, .95);
+    transition-duration: 100ms;
+}

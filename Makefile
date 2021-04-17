@@ -16,7 +16,11 @@ install: uninstall ## symlinks extension in place, login with xorg and use ALT+F
 uninstall: ## removes symlink
 	gnome-extensions uninstall clear-top-bar@superterran.net || true
 	rm -r ~/.local/share/gnome-shell/extensions/clear-top-bar@superterran.net || true
-enable:	## convenience to enable extension, probably will need to once installed and re-logged in
+enable:	## enable extension, probably will need to once installed and re-logged in
 	gnome-extensions enable clear-top-bar@superterran.net 
 disable: ## disable extension
 	gnome-extensions disable clear-top-bar@superterran.net 
+enable-companion: ## enables zhanghai extension
+	gnome-extensions enable transparent-top-bar@zhanghai.me
+disable-companion: ## disables zhanghai extension
+	gnome-extensions disable transparent-top-bar@zhanghai.me
