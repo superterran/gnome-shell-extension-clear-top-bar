@@ -3,14 +3,11 @@
     background-color: rgba(0, 0, 0, 1);
 }
 
-#panel.superterran-clear-top-bar.transparent-top-bar--transparent {
-    background-color: rgba(0, 0, 0, 0);
-}
-
+#panel.superterran-clear-top-bar.transparent-top-bar--transparent,
 #panel.superterran-clear-top-bar {
     background-color: rgba(0, 0, 0, 0);
 }
 
-#panel.superterran-clear-top-bar.transparent-top-bar--transparent .panel-corner {
+#panel.superterran-clear-top-bar .panel-corner {
     -panel-corner-background-color: rgba(0, 0, 0, 0);
 }
