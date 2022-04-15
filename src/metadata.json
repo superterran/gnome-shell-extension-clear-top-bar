@@ -1,7 +1,7 @@
 {
   "description": "Fully transparent topbar, pairs with the zhanghai transparent top bar extension to make bar opaque when window is maximized",
   "name": "Clear Top Bar",
-  "shell-version": ["40", "41"],
+  "shell-version": ["40", "41", "42"],
   "url": "https://github.com/superterran/gnome-shell-extension-clear-top-bar",
   "uuid": "clear-top-bar@superterran.net"
 }
